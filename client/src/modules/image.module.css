@@ -1,0 +1,10 @@
+.image {
+  width: 100%;
+  max-width: 300px;
+  background-color: var(--colorFive);
+  border: 2px solid var(--colorFive);
+  border-radius: 50%;
+}
+.image img {
+  width: 100%;
+}

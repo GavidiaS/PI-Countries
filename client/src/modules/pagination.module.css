@@ -1,0 +1,100 @@
+.page {
+  width: 20px;
+  height: 20px;
+  background-color: var(--colorTwo);
+  position: absolute;
+  top: 45px;
+  left: calc(50% - 10px);
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  color: var(--colorFive);
+  user-select: none;
+}
+.prev, .next {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 45px;
+  outline: none;
+  border: none;
+  background-color: var(--colorTwo);
+  font-size: 1.4rem;
+  color: var(--colorFive);
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all .3s linear;
+}
+.prev:hover, .next:hover {
+  opacity: 1;
+}
+.prev:disabled, .next:disabled {
+  background-color: #888;
+}
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+.list {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .page {
+    top: 20px;
+    left: calc(50% + 50px);
+    width: 30px;
+    height: 30px;
+    font-size: 2.2rem;
+    padding-top: 2px;
+  }
+  .prev {
+    left: 80px;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+  }
+  .next {
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .prev, .page, .next {
+    display: none;
+  }
+  .list {
+    width: 100%;
+    max-width: 800px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 300px);
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .list button {
+    width: 20px;
+    height: 20px;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--colorOne);
+    border-radius: 50%;
+    background-color: var(--colorFive);
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all .3s linear;
+  }
+  .list button:hover, .list button:focus {
+    opacity: 1;
+  }
+}

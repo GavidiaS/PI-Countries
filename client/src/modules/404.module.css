@@ -1,0 +1,16 @@
+.not {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--colorTwo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.not figure {
+  width: 100%;
+  max-width: 1000px;
+  height: 80%;
+  background-image: url("../resources/notFound.png");
+  background-size: cover;
+  background-position: center;
+}

@@ -1,0 +1,142 @@
+.filter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #0009;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+.contain {
+  width: 100%;
+  max-width: 800px;
+  min-height: 400px;
+  background-color: var(--colorOne);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 80px 20px;
+}
+.contain button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all .3s linear;
+}
+.contain button:hover {
+  opacity: 1;
+}
+.close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 40px;
+  left: calc(50% - 15px);
+  border-radius: 50%;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--colorOne);
+}
+.btn, .reset {
+  width: max-content;
+  height: max-content;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 20px;
+}
+.btn {
+  left: 20%;
+}
+.reset {
+  right: 20%;
+}
+.items {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.items article {
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+.order {
+  height: 120px;
+}
+.items article div label input {
+  display: none;
+}
+.items article h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--colorFive);
+  margin-bottom: 10px;
+  user-select: none;
+}
+.items article div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  overflow-y: auto;
+  border: 2px solid var(--colorFive);
+  padding: 10px;
+}
+.items article div label {
+  width: 100%;
+  max-width: 200px;
+  height: 25px;
+  text-align: center;
+}
+.items article div label span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  font-size: 1.6rem;
+  color: var(--colorFive);
+  cursor: pointer;
+}
+.items article div label input:checked + span {
+  background-color: #3C3;
+  color: var(--colorOne);
+}
+.items article div label input:disabled + span {
+  background-color: #888;
+  color: #000;
+}
+
+@media screen and (min-width: 800px) {
+  .filter {
+    justify-content: left;
+  }
+  .contain {
+    width: 400px;
+    height: 100vh;
+  }
+  .close {
+    top: 15px;
+    left: 350px;
+  }
+  .btn {
+    left: 30%;
+  }
+  .reset {
+    right: 30%;
+  }
+}

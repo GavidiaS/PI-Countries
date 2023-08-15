@@ -1,0 +1,198 @@
+.detail {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 60px;
+  background-color: var(--colorThree);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contain {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.data {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorOne);
+  padding: 20px 0;
+}
+.data figure {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.data figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.data div {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-left: 5px;
+}
+.data div h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--colorFive);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.data div h4 {
+  font-size: 1.6rem;
+  color: var(--colorFour);
+  user-select: none;
+  margin-bottom: 5px;
+}
+.data div h4 span {
+  font-size: 2rem;
+  color: var(--colorFive);
+}
+.activity:empty, .user:empty {
+  display: none;
+}
+.activity, .user {
+  width: 100%;
+  background-color: var(--colorOne);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.activity table, .user table {
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  border: 3px solid var(--colorFive);
+}
+.activity table caption, .user table caption {
+  font-size: 2rem;
+  color: var(--colorFive);
+  margin-bottom: 15px;
+}
+.activity table tr th, .user table tr th {
+  background-color: var(--colorFive);
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--colorOne);
+}
+.activity table tr td, .user table tr td {
+  background-color: var(--colorFive);
+  font-size: 1.8rem;
+  color: var(--colorOne);
+}
+
+.dataAct, .userAct {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--colorOne);
+  padding: 20px 0;
+  border-bottom: 3px solid var(--colorFive);
+}
+.dataAct h1, .dataAct h3 {
+  font-size: 1.6rem;
+  color: var(--colorFive);
+}
+.dataAct h1 {
+  font-weight: bold;
+  color: #FE3;
+}
+.dataAct h3 {
+  user-select: none;
+}
+.userAct h2 {
+  user-select: none;
+  font-size: 1.6rem;
+  color: var(--colorFive);
+}
+.countryAct {
+  width: 100%;
+  padding: 20px 0;
+  background-color: var(--colorOne);
+}
+.countryAct table {
+  width: 100%;
+  max-width: 400px;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid var(--colorFive);
+  user-select: none;
+  margin: auto;
+}
+.countryAct table caption {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--colorFive);
+  margin-bottom: 15px;
+}
+.countryAct table tr {
+  background-color: var(--colorFour);
+  width: 100%;
+  height: 40px;
+}
+.countryAct table tr th {
+  color: var(--colorOne);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.countryAct table tr td {
+  font-size: 1.8rem;
+  color: var(--colorOne);
+  padding-top: 5px;
+}
+.countryAct table tr td img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 800px) {
+  .detail {
+    padding-left: 100px;
+    padding-bottom: 20px;
+  }
+  .data {
+    flex-direction: row;
+    border-bottom: 3px solid var(--colorFive);
+    padding: 0;
+  }
+  .data div {
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+  .dataAct {
+    border-radius: 20px 20px 0 0;
+  }
+  .dataAct h1 {
+    font-size: 3rem;
+  }
+  .dataAct h3 {
+    font-size: 2rem;
+  }
+  .userAct h2 {
+    font-size: 2rem;
+  }
+  .countryAct table tr th {
+    font-size: 2.2rem;
+  }
+  .countryAct table tr td {
+    font-size: 2.2rem;
+  }
+  .countryAct {
+    border-radius: 0 0 20px 20px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .activity, .user {
+    width: 400px;
+  }
+}
